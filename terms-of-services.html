@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PLOX MEDIA</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/plox-removebg-preview (1).png"
+      type="image/svg+xml"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+    <style>
+      @media (max-width: 492px) {
+        .hero-banner img {
+          width: 300px;
+        }
+      }
+    </style>
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo"
+          ><img
+            src="./assets/images/plox-unscreen.gif"
+            style="width: 150px; margin-top: -50px"
+            alt=""
+        /></a>
+
+        <nav class="navbar" data-navbar>
+          <div class="wrapper">
+            <a href="#" class="logo"
+              ><img
+                src="./assets/images/plox-unscreen.gif"
+                style="width: 200px"
+                alt=""
+            /></a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="index.html#service" class="navbar-link" data-nav-link
+                >Services</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="index.html#feature" class="navbar-link" data-nav-link>Features</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" data-nav-link>Portfolio</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="index.html#blog" class="navbar-link" data-nav-link>Blog</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="btn btn-primary has-before has-after activity"
+          >Say Hello 👋</a
+        >
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <!-- 
+        - #SERVICE
+      -->
+
+        <section class="section hero" id="home" aria-label="hero">
+          <div
+            class="container"
+            style="display: flex; justify-content: center; align-items: center"
+          >
+            <div class="hero-content">
+              <h1 class="h1 hero-title">
+                Terms of <span class="has-before">Services</span>
+              </h1>
+
+              <h1 class="hero-text1">1. Terms</h1>
+              <p class="hero-text">
+                By accessing this Website, accessible from
+                https://ploxmedia.com, you are agreeing to be bound by these
+                Website Terms and Conditions of Use and agree that you are
+                responsible for the agreement with any applicable local laws. If
+                you disagree with any of these terms, you are prohibited from
+                accessing this site. The materials contained in this Website are
+                protected by copyright and trade mark law.
+              </p>
+              <h1 class="hero-text1">2. Use License</h1>
+              <p class="hero-text">
+                Permission is granted to temporarily download one copy of the
+                materials on PLOX MEDIA's Website for personal, non-commercial
+                transitory viewing only. This is the grant of a license, not a
+                transfer of title, and under this license you may not:
+              </p>
+              <ul class="" style="margin-block: 0px 0px">
+                <li style="display: flex; gap: 8px; align-items: center">
+                  <ion-icon name="caret-forward-outline"></ion-icon
+                  ><span> modify or copy the materials;</span>
+                </li>
+                <li style="display: flex; gap: 8px; align-items: center">
+                  <ion-icon name="caret-forward-outline"></ion-icon
+                  ><span>
+                    use the materials for any commercial purpose or for any
+                    public display;</span
+                  >
+                </li>
+                <li style="display: flex; gap: 8px; align-items: center">
+                  <ion-icon name="caret-forward-outline"></ion-icon
+                  ><span>
+                    attempt to reverse engineer any software contained on PLOX
+                    MEDIA’s Website;
+                  </span>
+                </li>
+                <li style="display: flex; gap: 8px; align-items: center">
+                  <ion-icon name="caret-forward-outline"></ion-icon
+                  ><span>
+                    remove any copyright or other proprietary notations from the
+                    materials; or
+                  </span>
+                </li>
+                <li style="display: flex; gap: 8px; align-items: center">
+                  <ion-icon name="caret-forward-outline"></ion-icon
+                  ><span>
+                    transferring the materials to another person or “mirror” the
+                    materials on any other server.
+                  </span>
+                </li>
+              </ul>
+              <p class="hero-text">
+                This will let PLOX MEDIA to terminate upon violations of any of
+                these restrictions. Upon termination, your viewing right will
+                also be terminated and you should destroy any downloaded
+                materials in your possession whether it is printed or electronic
+                format.
+              </p>
+              <h1 class="hero-text1">3. Disclaimer</h1>
+              <p class="hero-text">
+                All the materials on PLOX MEDIA’s Website are provided “as is”.
+                PLOX MEDIA makes no warranties, may it be expressed or implied,
+                therefore negates all other warranties. Furthermore, PLOX MEDIA
+                does not make any representations concerning the accuracy or
+                reliability of the use of the materials on its Website or
+                otherwise relating to such materials or any sites linked to this
+                Website.
+              </p>
+              <h1 class="hero-text1">4. Limitations</h1>
+              <p class="hero-text">
+                PLOX MEDIA or its suppliers will not be hold accountable for any
+                damages that will arise with the use or inability to use the
+                materials on PLOX MEDIA’s Website, even if PLOX MEDIA or an
+                authorize representative of this Website has been notified,
+                orally or written, of the possibility of such damage. Some
+                jurisdiction does not allow limitations on implied warranties or
+                limitations of liability for incidental damages, these
+                limitations may not apply to you.
+              </p>
+              <h1 class="hero-text1">5. Revisions and Errata</h1>
+              <p class="hero-text">
+                The materials appearing on PLOX MEDIA’s Website may include
+                technical, typographical, or photographic errors. PLOX MEDIA
+                will not promise that any of the materials in this Website are
+                accurate, complete, or current. PLOX MEDIA may change the
+                materials contained on its Website at any time without notice.
+                PLOX MEDIA does not make any commitment to update the materials.
+              </p>
+              <h1 class="hero-text1">6. Links</h1>
+              <p class="hero-text">
+                PLOX MEDIA has not reviewed all of the sites linked to its
+                Website and is not responsible for the contents of any such
+                linked site. The presence of any link does not imply endorsement
+                by PLOX MEDIA of the site. The use of any linked website is at
+                the user’s own risk.
+              </p>
+              <h1 class="hero-text1">7. Site Terms of Use Modifications</h1>
+              <p class="hero-text">
+                PLOX MEDIA may revise these Terms of Use for its Website at any
+                time without prior notice. By using this Website, you are
+                agreeing to be bound by the current version of these Terms and
+                Conditions of Use.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- 
+        - #FEATURE
+      -->
+
+        <!-- 
+        - #BLOG
+      --></article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top section">
+          <div class="footer-brand">
+            <p class="footer-list-title">
+              <img
+                src="./assets/images/plox-unscreen.gif"
+                style="width: 200px"
+                alt=""
+              />
+            </p>
+
+            <p class="footer-text">
+              Discover innovative solutions and elevate your online presence
+              with PLOX MEDIA — where your business meets excellence, and growth
+              knows no limits.
+            </p>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link instahover">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link twitterhover">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link facebookhover">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link linkedinhover">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Usefull Links</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">How it Works</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Create</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Explore</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms & Services</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Community</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+            <!-- <li>
+              <a href="#" class="footer-link">Partners</a>
+            </li> -->
+
+            <li>
+              <a href="#" class="footer-link">Suggestions</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Newsletters</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Instagram post</p>
+            </li>
+
+            <li>
+              <ul class="insta-post">
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-1.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-2.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-3.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-4.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-5.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-6.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2024 PLOX MEDIA. All Rights Reserved by PLOXMEDIA.com
+          </p>
+
+          <ul class="footer-bottom-list">
+            <li>
+              <a href="#" class="footer-bottom-link">Terms and conditions</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-bottom-link">Privacy policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-bottom-link">Login / Signup</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn has-after active"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  var typed = new Typed("#element", {
+    strings: [
+      "Social Management",
+      "Crafting Websites",
+      "Running Ads",
+      "Influence Marketing",
+      "Creative Design",
+      "Video Editing",
+    ],
+    typeSpeed: 100,
+    showCursor: false,
+    loop: true,
+    loopCount: Infinity,
+    backSpeed: 20,
+    fadeOut: true,
+    onStringTyped: (arrayPos, self) => {
+      // Change the background color on each text change
+      const hasBeforeElement = document.querySelector(".has-before");
+      const colors = [
+        "#FFD700",
+        "#00CED1",
+        "#FF6347",
+        "#87CEEB",
+        "#FF4500",
+        "#8A2BE2",
+      ]; // Add your colors here
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      hasBeforeElement.style.backgroundColor = randomColor;
+    },
+  });
+</script>
+<script>
+  var typed2 = new Typed("#serviceelement", {
+    strings: [
+      "Social Media Management",
+      "Web and Mobile Development",
+      "Instagram and Facebook Ads",
+      "Influencer Marketing",
+      "Creative and Poster Design",
+      "Video Editing",
+      "Business Development",
+      "and many more",
+    ],
+    typeSpeed: 100,
+    showCursor: false,
+    loop: true,
+    loopCount: Infinity,
+    backSpeed: 20,
+    fadeOut: true,
+  });
+</script>

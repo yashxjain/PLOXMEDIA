@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PLOX MEDIA</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/plox-removebg-preview (1).png"
+      type="image/svg+xml"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+    <style>
+      @media (max-width: 492px) {
+        .hero-banner img {
+          width: 350px;
+        }
+      }
+      textarea {
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 2rem;
+        border: none;
+        resize: none;
+        width: 350px;
+      }
+      @media (min-width: 992px) {
+        textarea {
+          background-color: #fff;
+          padding: 10px;
+          border-radius: 8px;
+          font-size: 2rem;
+          border: none;
+          resize: none;
+          width: 550px;
+          height: 150px;
+        }
+      }
+      
+    </style>
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="index.html" class="logo"
+          ><img
+            src="./assets/images/plox-unscreen.gif"
+            style="width: 150px; margin-top: -50px"
+            alt=""
+        /></a>
+
+        <nav class="navbar" data-navbar>
+          <div class="wrapper">
+            <a href="index.html" class="logo"
+              ><img
+                src="./assets/images/plox-unscreen.gif"
+                style="width: 200px"
+                alt=""
+            /></a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="index.html#service" class="navbar-link" data-nav-link
+                >Services</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="index.html#feature" class="navbar-link" data-nav-link
+                >Features</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="/" class="navbar-link" data-nav-link>Portfolio</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="index.html#blog" class="navbar-link" data-nav-link
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="btn btn-primary has-before has-after activity"
+          >Say Hello 👋</a
+        >
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <!-- 
+        - #SERVICE
+      -->
+
+        <section class="section hero" aria-label="hero">
+          <div class="container">
+            <figure class="hero-banner">
+              <img
+                src="./assets/images/Saly-11.png"
+                width="594"
+                height="337"
+                alt="hero banner"
+              />
+            </figure>
+            <div class="hero-content">
+              <h1 class="h1 hero-title">Contact us</h1>
+
+              <a
+                href="#"
+                style="
+                  color: #fbbc05;
+                  display: flex;
+                  gap: 10px;
+                  align-items: center;
+                  margin-block: 20px 0px;
+                "
+              >
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <span class="span">info@ploxmedia.com</span>
+              </a>
+
+              <form action="process-form.php" method="post">
+                <p class="hero-text" style="margin-block: 40px 15px">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    style="
+                      background-color: #fff;
+                      padding: 10px;
+                      border-radius: 8px;
+                    "
+                    required
+                  />
+                </p>
+                <p class="hero-text" style="margin-block: 40px 15px">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    style="
+                      background-color: #fff;
+                      padding: 10px;
+                      border-radius: 8px;
+                    "
+                    required
+                  />
+                </p>
+                <p class="hero-text">
+                  <textarea
+                    name="query"
+                    placeholder="Query"
+                    id="expandingTextarea"
+                    required
+                  ></textarea>
+                </p>
+
+                <div class="wrapper">
+                  <button
+                    type="submit"
+                    class="btn btn-primary has-before has-after"
+                    aria-label="ploxmedia promo"
+                    style="gap: 5px;"
+                  >
+                    <ion-icon name="play-outline" aria-hidden="true"></ion-icon>
+                    <span class="span">SEND</span>
+                  </button>
+                </div>
+              </form>
+
+              <ul class="social-list" style="margin-block: 40px 0px">
+                <li>
+                  <a
+                    href="#"
+                    class="social-link"
+                    style="--color: hsl(330, 100%, 50%)"
+                  >
+                    <ion-icon name="logo-instagram"></ion-icon>
+
+                    <span class="span">Instagram</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="social-link"
+                    style="--color: hsl(200, 100%, 35%)"
+                  >
+                    <ion-icon name="logo-linkedin"></ion-icon>
+
+                    <span class="span">LinkedIn</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="social-link"
+                    style="--color: hsl(203, 89%, 53%)"
+                  >
+                    <ion-icon name="logo-twitter"></ion-icon>
+
+                    <span class="span">Twitter</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- 
+        - #FEATURE
+      -->
+        <section
+          class="section newsletter has-bg-image"
+          aria-label="newsletter"
+          style="background: linear-gradient(to right, #87ceeb, white)"
+          id="newsletter"
+        >
+          <div class="container">
+            <figure class="newsletter-banner">
+              <img
+                src="./assets/images/newsletter-banner.png"
+                width="355"
+                height="356"
+                loading="lazy"
+                alt="newsletter banner"
+                class="w-100"
+                id="rotatingImage"
+              />
+            </figure>
+
+            <div class="newsletter-content">
+              <p class="section-subtitle has-before">Get every update</p>
+
+              <h2 class="h2 section-title">
+                Subscribe newslater get latest updates and deals
+              </h2>
+
+              <form action="" class="newsletter-form">
+                <input
+                  type="email"
+                  name="email_address"
+                  placeholder="Enter your mail"
+                  required
+                  class="email-field"
+                />
+
+                <button
+                  type="submit"
+                  class="btn btn-secondary has-before has-after"
+                >
+                  <span class="span">Subscribe</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!-- 
+        - #BLOG
+      --></article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+    <div class="whatsapp-button">
+      <a
+        href="https://wa.me/918053753044"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="./assets/images/whatsapp.png" alt="WhatsApp Icon" />
+      </a>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top section">
+          <div class="footer-brand">
+            <p class="footer-list-title">
+              <img
+                src="./assets/images/plox-unscreen.gif"
+                style="width: 200px"
+                alt=""
+              />
+            </p>
+
+            <p class="footer-text">
+              Discover innovative solutions and elevate your online presence
+              with PLOX MEDIA — where your business meets excellence, and growth
+              knows no limits.
+            </p>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link instahover">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link twitterhover">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link facebookhover">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link linkedinhover">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Usefull Links</p>
+            </li>
+
+            <li>
+              <a href="contact.html" class="footer-link">Contact us</a>
+            </li>
+
+            <li>
+              <a href="#project" class="footer-link">How it Works</a>
+            </li>
+
+            <li>
+              <a href="privacy-policy.html" class="footer-link"
+                >Privacy Policy</a
+              >
+            </li>
+
+            <li>
+              <a href="refund-policy.html" class="footer-link">Refund Policy</a>
+            </li>
+
+            <li>
+              <a href="terms-of-services.html" class="footer-link"
+                >Terms & Services</a
+              >
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Community</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+            <!-- <li>
+            <a href="#" class="footer-link">Partners</a>
+          </li> -->
+
+            <li>
+              <a href="#" class="footer-link">Suggestions</a>
+            </li>
+
+            <li>
+              <a href="#blog" class="footer-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#newsletter" class="footer-link">Newsletters</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Instagram post</p>
+            </li>
+
+            <li>
+              <ul class="insta-post">
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-1.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-2.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-3.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-4.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-5.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-6.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2024 PLOX MEDIA. All Rights Reserved by PLOXMEDIA.com
+          </p>
+
+          <ul class="footer-bottom-list">
+            <li>
+              <a href="refund-policy.html" class="footer-bottom-link"
+                >Refund Policy</a
+              >
+            </li>
+
+            <li>
+              <a href="privacy-policy.html" class="footer-bottom-link"
+                >Privacy policy</a
+              >
+            </li>
+
+            <!-- <li>
+            <a href="#" class="footer-bottom-link">Login / Signup</a>
+          </li> -->
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn has-after active"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  var typed = new Typed("#element", {
+    strings: [
+      "Social Management",
+      "Crafting Websites",
+      "Running Ads",
+      "Influence Marketing",
+      "Creative Design",
+      "Video Editing",
+    ],
+    typeSpeed: 100,
+    showCursor: false,
+    loop: true,
+    loopCount: Infinity,
+    backSpeed: 20,
+    fadeOut: true,
+    onStringTyped: (arrayPos, self) => {
+      // Change the background color on each text change
+      const hasBeforeElement = document.querySelector(".has-before");
+      const colors = [
+        "#FFD700",
+        "#00CED1",
+        "#FF6347",
+        "#87CEEB",
+        "#FF4500",
+        "#8A2BE2",
+      ]; // Add your colors here
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      hasBeforeElement.style.backgroundColor = randomColor;
+    },
+  });
+</script>
+<script>
+  var typed2 = new Typed("#serviceelement", {
+    strings: [
+      "Social Media Management",
+      "Web and Mobile Development",
+      "Instagram and Facebook Ads",
+      "Influencer Marketing",
+      "Creative and Poster Design",
+      "Video Editing",
+      "Business Development",
+      "and many more",
+    ],
+    typeSpeed: 100,
+    showCursor: false,
+    loop: true,
+    loopCount: Infinity,
+    backSpeed: 20,
+    fadeOut: true,
+  });
+</script>
+<script>
+  const textarea = document.getElementById("expandingTextarea");
+
+  textarea.addEventListener("input", function () {
+    this.style.height = "auto";
+    this.style.height = this.scrollHeight + 2 + "px";
+  });
+</script>
